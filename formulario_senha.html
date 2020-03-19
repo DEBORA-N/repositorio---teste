@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+<herd>
+	<meta charset="utf-8">
+	<title>formulários</title>
+	<STYLE>
+		body{
+			background-color: rgb(218,165,32);
+			color: darkslategray;
+		}
+	</STYLE>	
+</herd>
+
+<body>
+	<form action="processa.php" method="post"><!--Formulários permitem que o usuário envie dados para um sistema web. Devem ser declarados com a tag <form>. O atributo action indica a página que será carregada. O método de envio pode ser "post" (mais recomendado) ou "get" (envio pela url)-->
+		<label>text</label>
+		<input type="test" name="texto01" placeholder="text"><!--o que estiver escrito no Plac** será exibido numa caixinha, antes que alguem escreva nela.-->
+
+		<br>
+		
+		<label>password</label><!--nesse vai ser como uma senha, ela vai ser escrita ocultamente-->
+		<input type="password" name="senha">
+
+		<br>
+
+		<label>oculto</label><!--esse nem aparece na pagina-->
+		<input type="hidden" name="informacao_oculta" value="mensagem oculta">
+
+		<br>
+
+		<label>select</label><!--vai ter uma caixinha(com uma setinha)para selecionar opções-->
+		<select name="selecao">
+			<option value="1">opção 1</option>
+			<option value="2">opção 2</option>
+		</select>
+
+		<br>
+
+		<label>radio</label><!--vai aparecer duas bolinhas para escolher apenas uma opção, entre elas-->
+		<input type="radio" name="radio01" value="1">valor<br>
+		<input type="radio" name="radio01" value="2">valor 2
+
+		<br>
+		<label>checkbox</label><!--com esse vc pode marcar mais de uma opção(vai aparecer umas caixinhas quadradras).-->
+		<input type="checkbox" name="ck1" value="1" checked="">valor 1<br><!--CHECKED-FAZ COM QUE ESSA OPÇÃO JÁ PAREÇA MARCADA NA PÁGINA-->
+		<input type="checkbox" name="ck1" value="2">valor 2<br><input type="checkbox" name="ck1" value="3">valor 3<br>
+		 <BR>
+
+		<input type="submit" name="submit" value="Enviar"> <!--com essa opção ele vai enviar a resposta para a pagina indicada no começo desse BODY-->
+
+     
+</body>
+</html>
